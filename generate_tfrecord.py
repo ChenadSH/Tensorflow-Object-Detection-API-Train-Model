@@ -26,14 +26,14 @@ FLAGS = flags.FLAGS
 
 
 def class_text_to_int(row_label):
-    if row_label == 'Raspberry_Pi_3':
+    if row_label == 'hand':
         return 1
-    elif row_label == 'Arduino_Nano':
-        return 2
-    elif row_label == 'ESP8266':
-        return 3
-    elif row_label == 'Heltec_ESP32_Lora':
-        return 4
+    # elif row_label == 'Arduino_Nano':
+    #     return 2
+    # elif row_label == 'ESP8266':
+    #     return 3
+    # elif row_label == 'Heltec_ESP32_Lora':
+    #     return 4
     else:
         return None
 
@@ -61,6 +61,8 @@ def create_tf_example(group, path):
     classes = []
 
     for index, row in group.object.iterrows():
+        # print(row)
+        # print('------')
         xmins.append(row['xmin'] / width)
         xmaxs.append(row['xmax'] / width)
         ymins.append(row['ymin'] / height)
