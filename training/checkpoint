@@ -1,2 +1,4 @@
-model_checkpoint_path: "mobilenet_v2.ckpt-1"
-all_model_checkpoint_paths: "mobilenet_v2.ckpt-1"
+model_checkpoint_path: "ckpt-1"
+all_model_checkpoint_paths: "ckpt-1"
+all_model_checkpoint_timestamps: 1627615636.708205
+last_preserved_timestamp: 1627615634.9325361
